@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
     <link rel="stylesheet" href="calculadora.css">
-    <script src="calculadora.js"></script>
 </head>
 
 <body>
@@ -16,35 +15,36 @@
         </div>
         <div class="botones">
             <div class="fila1">
-                <button class="btn btn clear">CLEAR</button></li>
-                <button class="btn btn delete">DELETE</button></li>
+                <button class="btn btn clear" id="clear">CLEAR</button></li>
+                <button class="btn btn delete" id="delete">DELETE</button></li>
             </div>
             <div class="fila2">
-                <button class="btn btn 7">7</button>
-                <button class="btn btn 8">8</button>
-                <button class="btn btn 9">9</button>
-                <button class="btn btn /">/</button>
+                <button class="btn btn 7" id="7" onclick="capturarDatos()" value="7">7</button>
+                <button class="btn btn 8" id="8" onclick="capturarDatos()" value="8">8</button>
+                <button class="btn btn 9" id="9" onclick="capturarDatos()" value="9">9</button>
+                <button class="btn btn /" id="/">/</button>
             </div>
             <div class="fila3">
-                <button class="btn btn 4">4</button>
-                <button class="btn btn 5">5</button>
-                <button class="btn btn 6">6</button>
-                <button class="btn btn x">x</button>
+                <button class="btn btn 4" id="4" onclick="capturarDatos()" value="4">4</button>
+                <button class="btn btn 5" id="5" onclick="capturarDatos()" value="5">5</button>
+                <button class="btn btn 6" id="6" onclick="capturarDatos()" value="6">6</button>
+                <button class="btn btn x" id="x">x</button>
             </div>
             <div class="fila4">
-                <button class="btn btn 1">1</button>
-                <button class="btn btn 2">2</button>
-                <button class="btn btn 3">3</button>
-                <button class="btn btn -">-</button>
+                <button class="btn btn 1" id="1" onclick="capturarDatos()" value="1">1</button>
+                <button class="btn btn 2" id="2" onclick="capturarDatos()" value="2">2</button>
+                <button class="btn btn 3" id="3" onclick="capturarDatos()" value="3">3</button>
+                <button class="btn btn -" id="-">-</button>
             </div>
             <div class="fila5">
                 <button class="btn btn blanco"></button>
-                <button class="btn btn 0'">0</button>
-                <button class="btn btn =">=</button>
-                <button class="btn btn +">+</button>
+                <button class="btn btn 0" id="0" onclick="capturarDatos()" value="0">0</button>
+                <button class="btn btn =" id="=">=</button>
+                <button class="btn btn +" id="suma" onclick="capturarDatos()">+</button>
             </div>
         </div>
     </div>
+    <script src="calculadora.js"></script>
 
 </body>
 
