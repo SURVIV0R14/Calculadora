@@ -84,9 +84,11 @@ function capturarDatos() {
          limpiar();
     }
     btnIgual.onclick = function(){
-        a = resultado.value;
-         operacion = "=";
-         limpiar();
+        b = resultado.value;
+         resolver();
+    }
+    btnDelete.onclick = function(){
+        resetear();
     }
 }
 function limpiar(){
@@ -94,5 +96,27 @@ function limpiar(){
     console.log("limpio")
 }
 function resetear(){
-    
+    a = 0;
+    b= 0;
+    resultado.value = "";
+    operacion = "";
+}
+function resolver(){
+    var res = 0;
+    switch (operacion) {
+        case "+":
+            res = parseFloat(a) + parseFloat(b);
+            break;    
+        case "-":
+            res = parseFloat(a) - parseFloat(b);
+            break;
+        case "/":
+            res = parseFloat(a) / parseFloat(b);
+            break;
+        case "*":
+            res = parseFloat(a) * parseFloat(b); 
+            break;   
+    }
+    resetear();
+    resultado.value = res;
 }
